@@ -58,3 +58,19 @@ Update the interface to support two separate image inputs labeled "Image 1" and 
 For this step, implement only the interface and previews.
 Do not implement two-image AI processing yet.
 Explain the changes in simple English.
+
+
+Prompt 2: Now implement AI processing for Task 2 using the local Ollama llava model.
+
+- When "Describe Images" is clicked, process Image 1 and Image 2 in separate requests, one after the other.
+- Display each English description in its matching labeled area.
+- If only one image is selected, describe that image and show a helpful message for the missing image.
+- If neither image is selected, show a clear message.
+- Show loading, success, and error messages for each image.
+- Prevent duplicate requests and image changes during processing.
+- If one request fails, still try the other image.
+- Clear an image's old description when that image is replaced.
+
+Keep the existing layout and previews.
+Use actual AI responses, not placeholders.
+Explain the changes in simple English.

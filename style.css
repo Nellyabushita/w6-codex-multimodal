@@ -69,12 +69,15 @@ h2 { margin: 0; font-size: 16px; font-weight: 680; letter-spacing: -.015em; }
 .description-panel .eyebrow { margin-bottom: 7px; }
 .description-panel h2 { font-size: 17px; }
 .sparkle { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 10px; background: #f1f4ff; color: var(--accent); font-size: 18px; }
-.description-area { min-height: 125px; margin-top: 18px; padding: 16px; border: 1px solid #edf0f3; border-radius: 10px; color: #929daa; font-size: 13px; line-height: 1.6; }
+.description-area { min-height: 125px; margin-top: 18px; padding: 16px; border: 1px solid #edf0f3; border-radius: 10px; color: #929daa; font-size: 13px; line-height: 1.6; white-space: pre-wrap; }
+.description-area.has-description { color: var(--ink); }
 
 .action-area { margin: 20px auto 0; max-width: 460px; text-align: center; }
 .describe-button { width: 100%; min-height: 44px; border: 0; border-radius: 9px; background: var(--accent); color: #fff; font: inherit; font-size: 13px; font-weight: 650; }
 .describe-button:disabled { background: #e4e8ed; color: #929ba6; cursor: not-allowed; }
-.action-note { margin: 9px 0 0; color: var(--muted); font-size: 12px; }
+.action-status { min-height: 17px; margin: 9px 0 0; color: var(--muted); font-size: 12px; line-height: 1.4; }
+.action-status.error { color: #b42318; }
+.action-status.success { color: #24744a; }
 footer { margin-top: 22px; color: #9aa4af; font-size: 11px; text-align: center; }
 
 @media (max-width: 700px) {
