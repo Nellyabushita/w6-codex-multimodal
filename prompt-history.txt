@@ -1,0 +1,15 @@
+TASK 1
+Prompt 1:　I want to build a Single Image Describer step by step.
+
+First, create only the HTML and CSS interface with:
+- A heading: "Single Image Describer"
+- An input to select one image
+- An area for an image preview
+- A "Describe Image" button
+- An area for status and error messages
+- An area for the AI-generated description
+
+Use index.html and style.css.
+Do not add JavaScript or connect to Ollama yet.
+Use English for all interface text.
+Explain the changes in simple English.

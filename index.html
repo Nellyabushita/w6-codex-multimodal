@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f4f6f8">
+  <title>Single Image Describer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page-shell">
+    <header class="page-header">
+      <p class="eyebrow">IMAGE TOOL</p>
+      <h1>Single Image Describer</h1>
+      <p class="intro">Choose an image to get a clear description of what it shows.</p>
+    </header>
+
+    <section class="workspace" aria-label="Image description workspace">
+      <div class="input-column">
+        <div class="panel upload-panel">
+          <h2>Choose an image</h2>
+          <label class="file-picker" for="image-input">
+            <span class="upload-icon" aria-hidden="true">↑</span>
+            <span class="file-picker-title">Select one image</span>
+            <span class="file-picker-note">PNG, JPG, or WEBP</span>
+            <input id="image-input" name="image" type="file" accept="image/*">
+          </label>
+          <button class="describe-button" type="button" disabled>Describe Image</button>
+          <p class="status" role="status" aria-live="polite">Select an image to get started.</p>
+        </div>
+
+        <div class="panel preview-panel">
+          <div class="section-heading">
+            <h2>Image preview</h2>
+            <span class="step-label">PREVIEW</span>
+          </div>
+          <div class="preview-frame" aria-label="Selected image preview">
+            <div class="preview-empty" aria-hidden="true">
+              <span class="image-icon"><span></span></span>
+              <p>Your image will appear here</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="panel description-panel" aria-labelledby="description-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">AI OUTPUT</p>
+            <h2 id="description-title">Description</h2>
+          </div>
+          <span class="sparkle" aria-hidden="true">✳</span>
+        </div>
+        <div class="description-empty" aria-live="polite">
+          <p>Your image description will appear here.</p>
+        </div>
+      </section>
+    </section>
+    <footer>One image at a time · Clear, helpful descriptions</footer>
+  </main>
+</body>
+</html>
