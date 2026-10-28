@@ -14,6 +14,8 @@ Do not add JavaScript or connect to Ollama yet.
 Use English for all interface text.
 Explain the changes in simple English.
 
+
+
 Prompt 2: Next, add image preview functionality in main.js and connect it to index.html.
 
 When the user selects one image:
@@ -23,4 +25,19 @@ When the user selects one image:
 
 Do not connect to Ollama yet.
 Keep all interface text in English.
+Explain the changes in simple English.
+
+
+Prompt 3: The image preview works, and I installed llava using Ollama.
+
+Now connect the app to my local Ollama model, llava.
+
+- Send the selected image to Ollama when "Describe Image" is clicked.
+- Display the actual AI-generated description in English.
+- Show clear messages for no image selected, loading, success, and errors.
+- Prevent duplicate requests while processing.
+- Keep the existing image preview and layout.
+
+Check how to run the webpage locally and avoid browser CORS issues. If a local server is needed, explain how to start it.
+Do not use fake or placeholder AI responses.
 Explain the changes in simple English.

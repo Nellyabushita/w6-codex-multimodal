@@ -80,6 +80,7 @@ h2 { margin: 0; font-size: 16px; font-weight: 680; letter-spacing: -.015em; }
 .describe-button:disabled { background: #e4e8ed; color: #929ba6; cursor: not-allowed; }
 .status { min-height: 16px; margin: 12px 0 0; color: var(--muted); font-size: 12px; line-height: 1.4; }
 .status.error { color: #b42318; }
+.status.success { color: #24744a; }
 
 .preview-panel { padding: 20px 22px 22px; }
 .section-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
@@ -105,6 +106,7 @@ h2 { margin: 0; font-size: 16px; font-weight: 680; letter-spacing: -.015em; }
 .description-panel h2 { font-size: 19px; }
 .sparkle { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 10px; background: #f1f4ff; color: var(--accent); font-size: 18px; }
 .description-empty { min-height: 260px; margin-top: 22px; padding: 18px; border: 1px solid #edf0f3; border-radius: 10px; color: #929daa; font-size: 13px; line-height: 1.6; }
+.description-empty.has-description { color: var(--ink); white-space: pre-wrap; }
 .description-empty p { margin: 0; }
 
 footer { margin-top: 22px; color: #9aa4af; font-size: 11px; text-align: center; }
