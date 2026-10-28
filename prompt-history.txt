@@ -13,3 +13,14 @@ Use index.html and style.css.
 Do not add JavaScript or connect to Ollama yet.
 Use English for all interface text.
 Explain the changes in simple English.
+
+Prompt 2: Next, add image preview functionality in main.js and connect it to index.html.
+
+When the user selects one image:
+- Display the selected image in the preview area.
+- Replace the previous preview when a different image is selected.
+- Show a helpful message if the selected file is not an image.
+
+Do not connect to Ollama yet.
+Keep all interface text in English.
+Explain the changes in simple English.
