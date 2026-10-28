@@ -4,59 +4,82 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#f4f6f8">
-  <title>Single Image Describer</title>
+  <title>Two Image Describer</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <main class="page-shell">
     <header class="page-header">
       <p class="eyebrow">IMAGE TOOL</p>
-      <h1>Single Image Describer</h1>
-      <p class="intro">Choose an image to get a clear description of what it shows.</p>
+      <h1>Two Image Describer</h1>
+      <p class="intro">Choose two images to preview them side by side.</p>
     </header>
 
-    <section class="workspace" aria-label="Image description workspace">
-      <div class="input-column">
-        <div class="panel upload-panel">
-          <h2>Choose an image</h2>
-          <label class="file-picker" for="image-input">
-            <span class="upload-icon" aria-hidden="true">↑</span>
-            <span class="file-picker-title">Select one image</span>
-            <span class="file-picker-note">PNG, JPG, or WEBP</span>
-            <input id="image-input" name="image" type="file" accept="image/*">
-          </label>
-          <button class="describe-button" type="button">Describe Image</button>
-          <p class="status" role="status" aria-live="polite">Select an image to get started.</p>
-        </div>
-
-        <div class="panel preview-panel">
-          <div class="section-heading">
-            <h2>Image preview</h2>
-            <span class="step-label">PREVIEW</span>
-          </div>
-          <div class="preview-frame" id="image-preview" aria-label="Selected image preview" aria-live="polite">
-            <div class="preview-empty" aria-hidden="true">
-              <span class="image-icon"><span></span></span>
-              <p>Your image will appear here</p>
-            </div>
+    <section class="image-grid" aria-label="Image inputs and previews">
+      <article class="panel image-card" aria-labelledby="image-1-title">
+        <h2 id="image-1-title">Image 1</h2>
+        <label class="file-picker" for="image-1-input">
+          <span class="upload-icon" aria-hidden="true">↑</span>
+          <span class="file-picker-title">Select Image 1</span>
+          <span class="file-picker-note">PNG, JPG, or WEBP</span>
+          <input id="image-1-input" name="image-1" type="file" accept="image/*">
+        </label>
+        <p class="status" id="image-1-status" role="status" aria-live="polite">Select an image to see its preview.</p>
+        <div class="preview-frame" id="image-1-preview" aria-label="Image 1 preview" aria-live="polite">
+          <div class="preview-empty" aria-hidden="true">
+            <span class="image-icon"></span>
+            <p>Image 1 preview will appear here</p>
           </div>
         </div>
-      </div>
+      </article>
 
-      <section class="panel description-panel" aria-labelledby="description-title">
+      <article class="panel image-card" aria-labelledby="image-2-title">
+        <h2 id="image-2-title">Image 2</h2>
+        <label class="file-picker" for="image-2-input">
+          <span class="upload-icon" aria-hidden="true">↑</span>
+          <span class="file-picker-title">Select Image 2</span>
+          <span class="file-picker-note">PNG, JPG, or WEBP</span>
+          <input id="image-2-input" name="image-2" type="file" accept="image/*">
+        </label>
+        <p class="status" id="image-2-status" role="status" aria-live="polite">Select an image to see its preview.</p>
+        <div class="preview-frame" id="image-2-preview" aria-label="Image 2 preview" aria-live="polite">
+          <div class="preview-empty" aria-hidden="true">
+            <span class="image-icon"></span>
+            <p>Image 2 preview will appear here</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="descriptions" aria-label="Image descriptions">
+      <article class="panel description-panel" aria-labelledby="description-1-title">
         <div class="section-heading">
           <div>
             <p class="eyebrow">AI OUTPUT</p>
-            <h2 id="description-title">Description</h2>
+            <h2 id="description-1-title">Image 1 Description</h2>
           </div>
           <span class="sparkle" aria-hidden="true">✳</span>
         </div>
-        <div class="description-empty" aria-live="polite">
-          <p>Your image description will appear here.</p>
+        <div class="description-area" aria-live="polite">The description for Image 1 will appear here.</div>
+      </article>
+
+      <article class="panel description-panel" aria-labelledby="description-2-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">AI OUTPUT</p>
+            <h2 id="description-2-title">Image 2 Description</h2>
+          </div>
+          <span class="sparkle" aria-hidden="true">✳</span>
         </div>
-      </section>
+        <div class="description-area" aria-live="polite">The description for Image 2 will appear here.</div>
+      </article>
     </section>
-    <footer>One image at a time · Clear, helpful descriptions</footer>
+
+    <div class="action-area">
+      <button class="describe-button" type="button" disabled>Describe Images</button>
+      <p class="action-note">Image descriptions will be available in a later step.</p>
+    </div>
+    <footer>Two images · Independent previews and descriptions</footer>
   </main>
   <script src="main.js" defer></script>
 </body>

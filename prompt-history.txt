@@ -41,3 +41,20 @@ Now connect the app to my local Ollama model, llava.
 Check how to run the webpage locally and avoid browser CORS issues. If a local server is needed, explain how to start it.
 Do not use fake or placeholder AI responses.
 Explain the changes in simple English.
+
+
+
+
+TASK2
+Prompt 1: I am now on the task2 branch.
+
+Update the interface to support two separate image inputs labeled "Image 1" and "Image 2".
+
+- Show an independent preview for each image.
+- Replacing one image must not change the other preview.
+- Add separate description areas labeled for each image.
+- Keep all interface text in English.
+
+For this step, implement only the interface and previews.
+Do not implement two-image AI processing yet.
+Explain the changes in simple English.
